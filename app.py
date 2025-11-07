@@ -546,6 +546,14 @@ custom_css = """
 """
 pn.config.raw_css.append(custom_css)
 
+import traceback
+
+try:
+    template.servable()
+except Exception as e:
+    pn.panel(f"⚠️ Erro ao gerar o painel: {e}\n\n{traceback.format_exc()}").servable()
+
+
 # Exibe o painel
 template.servable()
 
