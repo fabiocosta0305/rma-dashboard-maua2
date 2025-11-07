@@ -3,8 +3,9 @@
 # ------------------------------
 import pandas as pd
 import panel as pn
-import hvplot.pandas  # integra Pandas -> hvPlot
+import hvplot.pandas
 import os
+import traceback
 
 
 # ------------------------------
@@ -546,17 +547,15 @@ custom_css = """
 """
 pn.config.raw_css.append(custom_css)
 
-import traceback
+pn.config.raw_css.append(custom_css)
 
-try:
+    # Adiciona o layout ao template e o torna servável
+    template.main.append(layout)
     template.servable()
+
 except Exception as e:
-    pn.panel(f"⚠️ Erro ao gerar o painel: {e}\n\n{traceback.format_exc()}").servable()
-
-
-# Exibe o painel
-template.servable()
-
-if __name__ == "__main__":
-    pn.serve(template, show=False, address="0.0.0.0", port=int(os.environ.get("PORT", 7860)))
+    # Exibe erro amigável no painel
+    pn.panel(
+        f"⚠️ **Erro ao carregar o painel:**\n\n```\n{e}\n\n{traceback.format_exc()}\n```"
+    ).servable()
 
