@@ -548,3 +548,7 @@ pn.config.raw_css.append(custom_css)
 
 # Exibe o painel
 template.servable()
+
+if __name__ == "__main__":
+    pn.serve(template, show=False, address="0.0.0.0", port=int(os.environ.get("PORT", 7860)))
+
