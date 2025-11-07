@@ -1,6 +1,6 @@
 panel
-hvplot
-holoviews
 pandas
-numpy
+hvplot
 openpyxl
+bokeh
+holoviews
