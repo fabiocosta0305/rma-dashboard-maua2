@@ -547,15 +547,8 @@ custom_css = """
 """
 pn.config.raw_css.append(custom_css)
 
-pn.config.raw_css.append(custom_css)
+# Adiciona o layout ao template e o torna servável
+template.main.append(layout)
+template.servable()
 
-    # Adiciona o layout ao template e o torna servável
-    template.main.append(layout)
-    template.servable()
-
-except Exception as e:
-    # Exibe erro amigável no painel
-    pn.panel(
-        f"⚠️ **Erro ao carregar o painel:**\n\n```\n{e}\n\n{traceback.format_exc()}\n```"
-    ).servable()
 
