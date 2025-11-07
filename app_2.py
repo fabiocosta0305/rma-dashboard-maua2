@@ -13,7 +13,8 @@ pn.extension()
 # ------------------------------
 # 1. Ler a planilha
 # ------------------------------
-caminho = r"C:\Users\soareseas\Documents\Ezequiel\RMA projeto\CONSOLIDADO 2024 JAN-DEZ.xlsx"
+#caminho = r"C:\Users\soareseas\Documents\Ezequiel\RMA projeto\CONSOLIDADO 2024 JAN-DEZ.xlsx"
+caminho_arquivo = os.path.join(os.path.dirname(__file__), "CONSOLIDADO 2024 JAN-DEZ.xlsx")
 aba = "CRAS GERAL"
 
 # Lendo sem cabeçalho
