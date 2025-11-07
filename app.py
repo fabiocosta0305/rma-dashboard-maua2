@@ -4,6 +4,8 @@
 import pandas as pd
 import panel as pn
 import hvplot.pandas  # integra Pandas -> hvPlot
+import os
+
 
 # ------------------------------
 # Extensão Panel
