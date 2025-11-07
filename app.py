@@ -20,7 +20,7 @@ caminho_arquivo = os.path.join(os.path.dirname(__file__), "CONSOLIDADO 2024 JAN-
 aba = "CRAS GERAL"
 
 # Lendo sem cabeçalho
-df_raw = pd.read_excel(caminho, sheet_name=aba, header=None)
+df_raw = pd.read_excel(caminho_arquivo, sheet_name=aba, header=None)
 
 # ------------------------------
 # 2. Definir meses
