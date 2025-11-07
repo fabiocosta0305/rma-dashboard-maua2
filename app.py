@@ -551,4 +551,9 @@ pn.config.raw_css.append(custom_css)
 template.main.append(layout)
 template.servable()
 
+# no fim do arquivo:
+if __name__ == "__main__":
+    pn.serve(template, port=7860, show=False)
+else:
+    app = template
 
