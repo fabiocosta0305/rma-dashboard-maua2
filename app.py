@@ -131,7 +131,7 @@ abas = [
 linha_familias_cadastradas = 131
 dados_familias_cadastradas = {}
 for aba in abas:
-    df_raw_unique = pd.read_excel(caminho, sheet_name=aba, header=None)
+    df_raw_unique = pd.read_excel(caminho_arquivo, sheet_name=aba, header=None)
     valores = df_raw_unique.iloc[linha_familias_cadastradas, col_inicio:col_fim + 1].tolist()
     dados_familias_cadastradas[aba.replace("CRAS ", "")] = valores
 dados_familias_cadastradas = pd.DataFrame(dados_familias_cadastradas, index=meses).T
