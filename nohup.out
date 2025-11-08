@@ -1,0 +1,8 @@
+KPackageStructure of KPluginMetaData(pluginId:"org.kde.windowtitle.Fork", fileName: "/home/fabioec/.local/share/plasma/plasmoids/org.kde.windowtitle.Fork/metadata.json") does not match requested format "Plasma/Applet"
+KPackageStructure of KPluginMetaData(pluginId:"org.kpple.kppleMenu", fileName: "/home/fabioec/.local/share/plasma/plasmoids/org.kpple.kppleMenu/metadata.json") does not match requested format "Plasma/Applet"
+KPackageStructure of KPluginMetaData(pluginId:"Plasma.Control.Hub", fileName: "/home/fabioec/.local/share/plasma/plasmoids/Plasma.Control.Hub/metadata.json") does not match requested format "Plasma/Applet"
+KPackageStructure of KPluginMetaData(pluginId:"org.kde.plasma.kweather_1x4", fileName: "/usr/share/plasma/plasmoids/org.kde.plasma.kweather_1x4/metadata.json") does not match requested format "Plasma/Applet"
+kf.coreaddons: The plugin "/usr/lib/qt6/plugins/plasma/applets/plasma_applet_kweather_1x4.so" explicitly states an Id in the embedded metadata, which is different from the one derived from the filename The Id field from the KPlugin object in the metadata should be removed
+kf.coreaddons: The plugin "/usr/lib/qt6/plugins/plasma/applets/plasma_applet_kweather_1x4.so" explicitly states an Id in the embedded metadata, which is different from the one derived from the filename The Id field from the KPlugin object in the metadata should be removed
+kf.plasma.quick: Applet preload policy set to 1
+qrc:/qt/qml/plasma/applet/org/kde/plasma/kickoff/main.qml:312:13: QML Image: Cannot open: qrc:/home/fabioec/MadHatterIcon.png
