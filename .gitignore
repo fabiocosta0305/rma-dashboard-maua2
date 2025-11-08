@@ -210,3 +210,4 @@ pip-selfcheck.json
 PI 4/*
 .jupyter*
 .~lock.*
+nohup*
